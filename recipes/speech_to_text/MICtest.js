@@ -72,15 +72,4 @@ tj.listen(function(msg) {
     }
 });
 
-// let's have a disco party!
-/*
-function discoParty() {
-    for (i = 0; i < 30; i++) {
-        setTimeout(function() {
-            var randIdx = Math.floor(Math.random() * tjColors.length);
-            var randColor = tjColors[randIdx];
-            tj.shine(randColor);
-        }, i * 250);
-    }
-}
-*/
+

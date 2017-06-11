@@ -1,5 +1,5 @@
 ## Using TJBot on common-cathode Tri-clor LED
-1) Read the instructable [here](http://www.instructables.com/id/Build-a-Talking-Robot-With-Watson-and-Raspberry-Pi/)
+1) Read the instructable [here](http://www.instructables.com/id/Use-Your-Voice-to-Control-a-Light-With-Watson/)
 
 2) Prepare the correct environment 
 
@@ -18,6 +18,9 @@ cd tjbot/recipes/speech_to_text/
 sudo npm install  
 ```
 
+######(if "sudo npm install" produces error such as "WARN EACCES user "root" does not have permission to access the dev dir ...", 
+go to home directory ("cd /home/pi/") and delete the folder ".npm/".) 
+
 4) Install rpio package
 
 ```bash
@@ -32,6 +35,22 @@ sudo node LEDtest.js
 
 6) Test the microphone
 
+To check the existence of the device:
+lsusb
+alsamixer
+arecord -l
+
+Try recording:
+arecord a.wav -D sysdefault:CARD=1
+When done, "CTRL+C".
+
+Replay the recording with omxplayer:
+omxplayer a.wav
+
+Adjust the noise settings of the microphone through alsamixer. 
+
+7) Edit the config.js file as noted in the Instructables.
+8) Run "stt.js"
 
 
 # IBM TJBot

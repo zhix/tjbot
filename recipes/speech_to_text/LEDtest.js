@@ -1,8 +1,6 @@
 
 var RED_PIN = 11, GREEN_PIN = 13, BLUE_PIN = 15;
 var LIGHT_PIN = 40;
-//On terminal
-//$ npm install rpio
 var rpio = require('rpio');
 
 
@@ -20,6 +18,8 @@ var colorPalette = { //[r,g,b]
     "off": [0,0,0],
     "on": [1,1,1]
 }
+
+console.log(Object.keys(colorPalette))
 
 /*Initialize the pins*/
 var initPins = function(){
@@ -71,19 +71,22 @@ function setLED(msg){
        color = colorPalette[words[i]];
        /*inject code to switch lamp*/
        if (['on','off'].indexOf(words[i]) > -1){
-         console.log(words[i]);
+         //console.log(words[i]);
          switchLight(words[i]);
        }
 
      }
    }
     turnLight(color);
-    console.log('color = ', color);
+    //console.log('color = ', color);
 }
 
-var x = 1;
 
-setInterval(function() {
+
+function discoParty() {
+	var x = 1;
+	for (i = 0; i < 30; i++) {
+	setTimeout(function() {
 	var answer = x % 3;
 	if (answer == 1) {
 		setLED("red");
@@ -94,6 +97,12 @@ setInterval(function() {
 	if (answer == 0) {
 		setLED("green");
 		}
+		
 	x = x+1;
   
-}, 2000);
+}, i*200);
+
+}
+setLED("off");}
+
+discoParty()
