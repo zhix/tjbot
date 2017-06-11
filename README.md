@@ -42,16 +42,13 @@ alsamixer
 arecord -l
 ```
 
-Try recording:
-
-```bash
-arecord a.wav -D sysdefault:CARD=1
-```
+Try recording: ```arecord a.wav -D sysdefault:CARD=1```
 
 When done, "CTRL+C" to exit. Replay the recording with omxplayer by ```omxplayer a.wav```. You need to adjust the noise settings of the microphone through ```alsamixer```. 
 
-7) Edit the config.js file as noted in the Instructables.
-8) Run "stt.js"
+7) Edit the config.js file as noted in the Instructables [Step 5](http://www.instructables.com/id/Use-Your-Voice-to-Control-a-Light-With-Watson/).
+
+8) When ready, run "stt.js" with ```sudo node stt.js``` and get the fun begin. 
 
 
 # IBM TJBot
