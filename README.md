@@ -18,7 +18,7 @@ cd tjbot/recipes/speech_to_text/
 sudo npm install  
 ```
 
-###### (if "sudo npm install" produces error such as "WARN EACCES user "root" does not have permission to access the dev dir ...", go to home directory ("cd /home/pi/") and delete the folder ".npm/".) 
+###### (if **_sudo npm install_** produces error such as **_WARN EACCES user "root" does not have permission to access the dev dir ..._**, go to home directory (**_cd /home/pi/_**) and delete the folder **_.npm/_** by **_rm -rf .npm/_** .) 
 
 4) Install rpio package
 
