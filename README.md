@@ -35,18 +35,20 @@ sudo node LEDtest.js
 6) Test the microphone
 
 To check the existence of the device:
+
+```bash
 lsusb
 alsamixer
 arecord -l
+```
 
 Try recording:
+
+```bash
 arecord a.wav -D sysdefault:CARD=1
-When done, "CTRL+C".
+```
 
-Replay the recording with omxplayer:
-omxplayer a.wav
-
-Adjust the noise settings of the microphone through alsamixer. 
+When done, "CTRL+C" to exit. Replay the recording with omxplayer by ```omxplayer a.wav```. You need to adjust the noise settings of the microphone through ```alsamixer```. 
 
 7) Edit the config.js file as noted in the Instructables.
 8) Run "stt.js"
