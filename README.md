@@ -1,14 +1,14 @@
 ## Using TJBot on common-cathode Tri-clor LED
-1) Read the instructable [here](http://www.instructables.com/id/Use-Your-Voice-to-Control-a-Light-With-Watson/)
+1) Read the original instructable [here](http://www.instructables.com/id/Use-Your-Voice-to-Control-a-Light-With-Watson/)
 
 2) Prepare the correct environment 
 
 ```bash 
-sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo apt-get install alsa-base alsa-utils libasound2-dev
+sudo apt-get install -y alsa-base alsa-utils libasound2-dev
 ```
 
 3) Get the tjbot repository from [Github](https://github.com/zhix/tjbot) 
