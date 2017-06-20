@@ -38,11 +38,17 @@ To check the existence of the device:
 
 ```bash
 lsusb
+```
+
+After checking the device is available, make sure you reboot Raspberry Pi to make the device available on alsamixer. 
+Next on choose the recording device (USB PnP) on alsamixer, change the "gain". 
+
+```bash 
 alsamixer
 arecord -l
 ```
 
-Try recording: ```arecord a.wav -D sysdefault:CARD=1```
+Finally, try recording: ```arecord a.wav -D sysdefault:CARD=1```
 
 When done, "CTRL+C" to exit. Replay the recording with omxplayer by ```omxplayer a.wav```. You need to adjust the noise settings of the microphone through ```alsamixer```. 
 
