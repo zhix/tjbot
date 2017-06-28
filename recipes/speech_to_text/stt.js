@@ -136,21 +136,17 @@ tj.listen(function(msg) {
 	if (containsDisco || containsRainbow) {		
         discoParty();
     }
-    else if (containsShake || containsMove) {
-		console.log("Wave arms");
-		var words = msg.split(" ");
-		
-		for (var i = 0; i < words.length; i++) {
-            var word = words[i];
-            if (word=="shake" || word =="Sheik" || word =="move") {
-				tj.wave();
-				}}}
+    
     else if ((containsTurn || containsChange || containsSet) && containsLight) {
         // was there a color uttered?
         var words = msg.split(" ");
         for (var i = 0; i < words.length; i++) {
             var word = words[i];
-            if (colorPalette[word] != undefined || word == "on" || word == "off" || word =="read" ||word =="right") {
+            if (word=="shake" || word =="Sheik" || word =="move") {
+				console.log("Wave arms");
+				tj.wave();
+				}
+            else if (colorPalette[word] != undefined || word == "on" || word == "off" || word =="read" ||word =="right") {
                 setLED(word);
                 break;
             }

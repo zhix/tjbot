@@ -1,4 +1,18 @@
 ## Using TJBot on common-cathode Tri-clor LED
+
+In the 3-hour workshop, students will be able to assemble their own TJBot and get it running with Watson API.
+
+1) [Setup] Setting up the Raspberry Pi as computer
+
+2) [Origami] Hands work! Fold your own TJBot! 
+
+3) [Hardware] Follow the diagram to set up the electronic components 
+
+4) [Software] Follow the instructions in order to get the TJBot working. 
+
+
+
+## Setting up the environment
 1) Read the original instructable [here](http://www.instructables.com/id/Use-Your-Voice-to-Control-a-Light-With-Watson/)
 
 2) Prepare the correct environment 
@@ -26,13 +40,7 @@ sudo npm install
 sudo npm install rpio 
 ```
 
-5) Test "LEDtest.js" to see if your tricolor LED is working. 
-
-```bash
-sudo node LEDtest.js 
-```
-
-6) Test the microphone
+5) Test the microphone
 
 To check the existence of the device:
 
@@ -52,9 +60,28 @@ Finally, try recording: ```arecord a.wav -D sysdefault:CARD=1```
 
 When done, "CTRL+C" to exit. Replay the recording with omxplayer by ```omxplayer a.wav```. You need to adjust the noise settings of the microphone through ```alsamixer```. 
 
-7) Edit the config.js file as noted in the Instructables [Step 5](http://www.instructables.com/id/Use-Your-Voice-to-Control-a-Light-With-Watson/).
+6) Edit the config.js file as noted in the Instructables [Step 5](http://www.instructables.com/id/Use-Your-Voice-to-Control-a-Light-With-Watson/).
 
-8) When ready, run "stt.js" with ```sudo node stt.js``` and get the fun begin. 
+7) Test "LEDtest.js" to see if your tricolor LED is working. 
+
+```bash
+sudo node LEDtest.js 
+```
+
+8) Test "MICtest.js" to see if your microphone is sending signals to IBM Watson.
+
+```bash
+sudo node MICtest.js 
+```
+
+9) Test "SERVOtest.js" to see if your servo motor is working fine.
+
+
+```bash
+sudo node SERVOtest.js 
+```
+
+10) When ready, run "stt.js" with ```sudo node stt.js``` and get the fun begin. 
 
 
 # IBM TJBot
