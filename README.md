@@ -10,30 +10,30 @@ This is a 3-hour workshop designed for upper-primary and secondary school studen
 * Raspberry Pi with microSD card attached
 * VGA-HDMI Converter
 * USB Microphone 
-* -------
+-------
 * Cardboard Model parts 
-* -------
+-------
 * 3 Male-Female Jumper Cables
 * 4 Female-Female Jumper Cables
 * Tri-color LED 
 * Micro Servo Motor
-* -------
+-------
 * Hot Glue Gun 
 
 ### 1) [Setup] Powering up Raspberry Pi as the computer
 
 1.	Get ready with the following items: 
 
-![alt text] [assemble]
+![alt text][assemble]
 
 2.	Hook up all the items into the correct ports on Raspberry Pi. 
 
-![alt text] [structure]
+![alt text][structure]
 
 3.	When everything is in place, you may then turn on the Monitor and Raspberry Pi. 
 
 4.  When you see this on your screen, you are in safe hands! 
-![alt text] [desktop] 
+![alt text][desktop] 
 
 Wait for a few seconds, you will see the destop like this. 
 ![alt text] [desktop2] 
