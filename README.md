@@ -43,11 +43,11 @@ This website will be your guidance from now on.
 ![alt text] [desktop3] 
 
 
-[assemble]: https://github.com/zhix/tjbot/images/AssembleRPi.png "Powering Up Raspberry Pi"
-[structure]: https://github.com/zhix/tjbot/images/StructureRPi.png "Powering Up Raspberry Pi" 
-[desktop]: https://github.com/zhix/tjbot/images/Startup.png 
-[desktop2]: https://github.com/zhix/tjbot/images/pixelDestop.png 
-[desktop3]: https://github.com/zhix/tjbot/images/desktop3.png 
+[assemble]: https://github.com/zhix/tjbot/blob/master/images/AssembleRPi.png  "Powering Up Raspberry Pi"
+[structure]: https://github.com/zhix/tjbot/blob/master/images/StructureRPi.png "Powering Up Raspberry Pi" 
+[desktop]: https://github.com/zhix/tjbot/blob/master/images/Startup.png 
+[desktop2]: https://github.com/zhix/tjbot/blob/master/images/pixelDestop.png 
+[desktop3]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
 
 
 ### 2) [Origami] Fold your own TJBot! 
