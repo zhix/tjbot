@@ -19,10 +19,15 @@ This is a 3-hour workshop designed for upper-primary and secondary school studen
 * Micro Servo Motor
 -------
 * Hot Glue Gun 
+* Watson Credentials (password & username)
 
 ### 1) [Setup] Powering up Raspberry Pi as the computer
 
 1.	Get ready with the following items: 
+
+<!---
+<img src="https://github.com/favicon.ico" width="48">
+--->
 
 ![alt text][assemble]
 
@@ -36,17 +41,17 @@ This is a 3-hour workshop designed for upper-primary and secondary school studen
 ![alt text][desktop] 
 
 Wait for a few seconds, you will see the destop like this. 
-![alt text] [desktop2] 
+![alt text][desktop2] 
 
 Before we move on, go to the Web Browser to access this website: github.com/zhix/tjbot 
 This website will be your guidance from now on. 
-![alt text] [desktop3] 
+![alt text][desktop3] 
 
 
 [assemble]: https://github.com/zhix/tjbot/blob/master/images/AssembleRPi.png  "Powering Up Raspberry Pi"
 [structure]: https://github.com/zhix/tjbot/blob/master/images/StructureRPi.png "Powering Up Raspberry Pi" 
 [desktop]: https://github.com/zhix/tjbot/blob/master/images/Startup.png 
-[desktop2]: https://github.com/zhix/tjbot/blob/master/images/pixelDestop.png 
+[desktop2]: https://github.com/zhix/tjbot/blob/master/images/pixelDestop.jpg 
 [desktop3]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
 
 
@@ -54,15 +59,70 @@ This website will be your guidance from now on.
 
 Build your own robot following the instructions [here](http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/) starting from Step 3. Alternatively, you can watch the [YouTube video here](https://www.youtube.com/watch?v=bLt3Cf2Ui3o) 
 
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="https://i.ytimg.com/vi/k928MQmD0oc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCVSTfddZpY0j1g2WF_bCXSU_4JWg" 
-alt="YouTube Video Here" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="https://i.ytimg.com/vi/k928MQmD0oc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCVSTfddZpY0j1g2WF_bCXSU_4JWg" alt="YouTube Video Here" width="240" border="10" /></a> 
 
 ### 3) [Electronics] Follow the diagram to set up the electronic components 
-
+After completion, you now need to connect the electronics to Raspberry Pi according to this diagram. 
+![alt text][fritzing] 
 
 ### 4) [Programming] Follow the instructions in order to get the TJBot working. 
+Once you are done, you are now working on the final and most crucial (possibly the most difficult) step. We will run the NodeJS programming on “Geany Programmer’s Editor”. 
 
+1. to Menu > Programming > Geany Programmer’s Editor 
+![alt text][geany] 
+
+You will see this on your screen. 
+![alt text][geany2] 
+
+2. On Terminal, change the directory to ```tjbot``` by typing the following. 
+![alt text][cdtjbot] 
+Press "enter" when done. 
+
+3. On Terminal, run the following. 
+```
+git init
+git pull 
+```
+![alt text][gitinit] 
+
+4. When done,  change the directory again to ```recipes``` then ```speech_to_text``` by typing the following
+```
+cd recipes/speech_to_text/ 
+```
+![alt text][s2t] 
+
+5. On Geany's Code Editor, open the file "config.js" to change the password and username according the paper given. Save the file after that. 
+![alt text][configcred] 
+
+5. Test "LEDtest.js" to see if your tricolor LED is working. 
+
+```bash
+sudo node LEDtest.js 
+```
+
+6. Test "MICtest.js" to see if your microphone is sending signals to IBM Watson.
+
+```bash
+sudo node MICtest.js 
+```
+
+9. Test "SERVOtest.js" to see if your servo motor is working fine.
+
+
+```bash
+sudo node SERVOtest.js 
+```
+
+10. If all set, we will run "stt.js" to see the effect. 
+
+
+[fritzing]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[geany]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[geany2]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[cdtjbot]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[gitinit]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[s2t]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[configcred]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
 
 
 ## Setting up the environment
