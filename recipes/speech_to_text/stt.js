@@ -19,6 +19,13 @@ var RED_PIN = 11, GREEN_PIN = 13, BLUE_PIN = 15;
 var LIGHT_PIN = 40;
 var rpio = require('rpio');
 
+/*Initialize the pins*/
+var initPins = function(){
+  rpio.open(RED_PIN,rpio.OUTPUT, rpio.HIGH);
+  rpio.open(GREEN_PIN,rpio.OUTPUT, rpio.HIGH);
+  rpio.open(BLUE_PIN,rpio.OUTPUT, rpio.HIGH);
+}
+
 var colorPalette = { //[r,g,b]
     "red": [1,0,0],
     "read": [1,0,0], // sometimes, STT hears "read" instead of "red"
@@ -37,16 +44,7 @@ var colorPalette = { //[r,g,b]
     "on": [1,1,1]
 }
 
-console.log("Here are the keywords you can say to turn on the light!")
-console.log(Object.keys(colorPalette))
-
-
-/*Initialize the pins*/
-var initPins = function(){
-  rpio.open(RED_PIN,rpio.OUTPUT, rpio.HIGH);
-  rpio.open(GREEN_PIN,rpio.OUTPUT, rpio.HIGH);
-  rpio.open(BLUE_PIN,rpio.OUTPUT, rpio.HIGH);
-}
+//console.log(Object.keys(colorPalette))
 
 var rpioVal = {
   1 : rpio.HIGH,
@@ -102,7 +100,7 @@ var config = require('./config');
 var credentials = config.credentials;
 
 // these are the hardware capabilities that our TJ needs for this recipe
-var hardware = ['led', 'microphone'];
+var hardware = ['led', 'microphone', 'servo'];
 
 // set up TJBot's configuration
 var tjConfig = {
@@ -117,13 +115,8 @@ var tj = new TJBot(hardware, tjConfig, credentials);
 // full list of colors that TJ recognizes, e.g. ['red', 'green', 'blue']
 var tjColors = tj.shineColors();
 
-console.log("I understand lots of colors.  You can tell me to shine my light a different color by saying 'turn the light red' or 'change the light to green' or 'turn the light off'.");
-
-// uncomment to see the full list of colors TJ understands
-// console.log("Here are all the colors I understand:");
-// console.log(tjColors.join(", "));
-
-// hash map to easily test if TJ understands a color, e.g. {'red': 1, 'green': 1, 'blue': 1}
+console.log("I understand colors and motion. You can tell me to shine my light by saying 'turn the color blue' or 'go green!' or 'turn the light off' or 'shake my hand!'.");
+console.log("Here are the keywords you can try: red, purple, red, move, rainbow, disco!")
 var colors = {};
 tjColors.forEach(function(color) {
     colors[color] = 1;
@@ -135,20 +128,29 @@ tj.listen(function(msg) {
     var containsChange = msg.indexOf("change") >= 0;
     var containsSet = msg.indexOf("set") >= 0;
     var containsLight = msg.indexOf("") >= 0;
-    var containsDisco = msg.indexOf("rainbow") >= 0;
+    var containsDisco = msg.indexOf("disco") >= 0;
+    var containsRainbow = msg.indexOf("rainbow") >= 0;
+    var containsShake = msg.indexOf("shake") >= 0;
+    var containsMove = msg.indexOf("move") >= 0;
     
-    
-	if (containsDisco) {
+	if (containsDisco || containsRainbow) {		
         discoParty();
     }
+    else if (containsShake || containsMove) {
+		console.log("Wave arms");
+		var words = msg.split(" ");
+		
+		for (var i = 0; i < words.length; i++) {
+            var word = words[i];
+            if (word=="shake" || word =="Sheik" || word =="move") {
+				tj.wave();
+				}}}
     else if ((containsTurn || containsChange || containsSet) && containsLight) {
         // was there a color uttered?
         var words = msg.split(" ");
         for (var i = 0; i < words.length; i++) {
             var word = words[i];
             if (colorPalette[word] != undefined || word == "on" || word == "off" || word =="read" ||word =="right") {
-                // yes!
-                //tj.shine(word);
                 setLED(word);
                 break;
             }
