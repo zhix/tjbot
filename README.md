@@ -1,14 +1,67 @@
-## Using TJBot on common-cathode Tri-clor LED
+# Using TJBot with common-cathode tri-color LED & servo motor 
 
-In the 3-hour workshop, students will be able to assemble their own TJBot and get it running with Watson API.
+This is a 3-hour workshop designed for upper-primary and secondary school students to explore on Raspberry Pi, Watson API, JavaScript and basic electronics. By the end of the workshop, students will be able to assemble their own TJBot and get it running with Watson API, controlling tri-color LED & servo motor by speech.
 
-1) [Setup] Setting up the Raspberry Pi as computer
+#### Make sure you have the followings before you start: 
+* Monitor 
+* Keyboard 
+* Mouse
+* Power supply (5V 2A) 
+* Raspberry Pi with microSD card attached
+* VGA-HDMI Converter
+* USB Microphone 
+* -------
+* Cardboard Model parts 
+* -------
+* 3 Male-Female Jumper Cables
+* 4 Female-Female Jumper Cables
+* Tri-color LED 
+* Micro Servo Motor
+* -------
+* Hot Glue Gun 
 
-2) [Origami] Hands work! Fold your own TJBot! 
+### 1) [Setup] Powering up Raspberry Pi as the computer
 
-3) [Hardware] Follow the diagram to set up the electronic components 
+1.	Get ready with the following items: 
 
-4) [Software] Follow the instructions in order to get the TJBot working. 
+![alt text] [assemble]
+
+2.	Hook up all the items into the correct ports on Raspberry Pi. 
+
+![alt text] [structure]
+
+3.	When everything is in place, you may then turn on the Monitor and Raspberry Pi. 
+
+4.  When you see this on your screen, you are in safe hands! 
+![alt text] [desktop] 
+
+Wait for a few seconds, you will see the destop like this. 
+![alt text] [desktop2] 
+
+Before we move on, go to the Web Browser to access this website: github.com/zhix/tjbot 
+This website will be your guidance from now on. 
+![alt text] [desktop3] 
+
+
+[assemble]: https://github.com/zhix/tjbot/images/AssembleRPi.png "Powering Up Raspberry Pi"
+[structure]: https://github.com/zhix/tjbot/images/StructureRPi.png "Powering Up Raspberry Pi" 
+[desktop]: https://github.com/zhix/tjbot/images/Startup.png 
+[desktop2]: https://github.com/zhix/tjbot/images/pixelDestop.png 
+[desktop3]: https://github.com/zhix/tjbot/images/desktop3.png 
+
+
+### 2) [Origami] Fold your own TJBot! 
+
+Build your own robot following the instructions [here](http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/) starting from Step 3. Alternatively, you can watch the [YouTube video here](https://www.youtube.com/watch?v=bLt3Cf2Ui3o) 
+
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="https://i.ytimg.com/vi/k928MQmD0oc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCVSTfddZpY0j1g2WF_bCXSU_4JWg" 
+alt="YouTube Video Here" width="240" height="180" border="10" /></a>
+
+### 3) [Electronics] Follow the diagram to set up the electronic components 
+
+
+### 4) [Programming] Follow the instructions in order to get the TJBot working. 
 
 
 
