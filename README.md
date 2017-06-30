@@ -24,14 +24,15 @@ This is a 3-hour workshop designed for upper-primary and secondary school studen
 ### 1) [Setup] Powering up Raspberry Pi as the computer
 
 1.	Get ready with the following items: 
-
 ![alt text][assemble]
 
-2.	Hook up all the items into the correct ports on Raspberry Pi. 
 
+2.	Hook up all the items into the correct ports on Raspberry Pi. 
 ![alt text][structure]
 
+
 3.	When everything is in place, you may then turn on the Monitor and Raspberry Pi. 
+
 
 4.  When you see this on your screen, you are in safe hands! 
 ![alt text][desktop] 
@@ -52,15 +53,18 @@ This website will be your guidance from now on.
 [desktop3]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
 
 
+
 ### 2) [Origami] Fold your own TJBot! 
 
 Build your own robot following the instructions [here](http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/) starting from Step 3. Alternatively, you can watch the [YouTube video here](https://www.youtube.com/watch?v=bLt3Cf2Ui3o) 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="https://i.ytimg.com/vi/k928MQmD0oc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCVSTfddZpY0j1g2WF_bCXSU_4JWg" alt="YouTube Video Here" width="240" border="10" /></a> 
 
+
 ### 3) [Electronics] Follow the diagram to set up the electronic components 
 After completion, you now need to connect the electronics to Raspberry Pi according to this diagram. 
 ![alt text][fritzing] 
+
 
 Refer to this GPIO Pinout Diagram to understand more about the General Purpose Input/Output Pins on Raspberry Pi:
 ![alt text][gpio] 
@@ -68,8 +72,10 @@ Refer to this GPIO Pinout Diagram to understand more about the General Purpose I
 [fritzing]: https://github.com/zhix/tjbot/blob/master/images/Fritzing.png 
 [gpio]: https://github.com/zhix/tjbot/blob/master/images/gpioPinout.jpg
 
+
 ### 4) [Programming] Follow the instructions in order to get the TJBot working. 
 Once you are done, you are now working on the final and most crucial (possibly the most difficult) step. We will run the NodeJS programming on “Geany Programmer’s Editor”. 
+
 
 1. Go to Menu > Programming > Geany Programmer’s Editor 
 ![alt text][geany] 
@@ -77,9 +83,11 @@ Once you are done, you are now working on the final and most crucial (possibly t
 You will see this on your screen. 
 ![alt text][geany2] 
 
+
 2. On Terminal, change the directory to ```tjbot``` by typing the following. 
 ![alt text][cdtjbot] 
 Press "enter" when done. 
+
 
 3. On Terminal, run the following. 
 ```
@@ -88,25 +96,26 @@ git pull
 ```
 ![alt text][gitinit] 
 
+
 4. When done,  change the directory again to ```recipes``` then ```speech_to_text``` by typing the following
 ```
 cd recipes/speech_to_text/ 
 ```
 ![alt text][s2t] 
 
+
 5. On Geany's Code Editor, open the file "config.js" to change the password and username according the paper given. Save the file after that. 
 ![alt text][configcred1] 
 ![alt text][configcred2] 
 ![alt text][configcred3] 
 
-6. Test "LEDtest.js" to see if your tricolor LED is working. 
 
+6. Test "LEDtest.js" to see if your tricolor LED is working. 
 ```bash
 sudo node LEDtest.js 
 ```
 
 7. Test "MICtest.js" to see if your microphone is sending signals to IBM Watson.
-
 ```bash
 sudo node MICtest.js 
 ```
@@ -115,12 +124,14 @@ Try to speak into the microphone, see what is printed on the Terminal.
 
 
 8. Test "SERVOtest.js" to see if your servo motor is working fine.
-
 ```bash
 sudo node SERVOtest.js 
 ```
 
-10. If all set, we will run "stt.js" to see the effect. 
+9. If all set, we will run "stt.js" to see the full effect. 
+```bash
+sudo node stt.js
+```
 
 
 [geany]: https://github.com/zhix/tjbot/blob/master/images/geany.png 
@@ -131,7 +142,7 @@ sudo node SERVOtest.js
 [configcred1]: https://github.com/zhix/tjbot/blob/master/images/configcred1.png 
 [configcred2]: https://github.com/zhix/tjbot/blob/master/images/configcred2.png 
 [configcred3]: https://github.com/zhix/tjbot/blob/master/images/configcred3.png 
-[micest]: https://github.com/zhix/tjbot/blob/master/images/mictest.png 
+[mictest]: https://github.com/zhix/tjbot/blob/master/images/mictest.png 
 
 
 ## Setting up the environment
