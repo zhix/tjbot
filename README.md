@@ -43,7 +43,7 @@ This is a 3-hour workshop designed for upper-primary and secondary school studen
 Wait for a few seconds, you will see the destop like this. 
 ![alt text][desktop2] 
 
-Before we move on, go to the Web Browser to access this website: github.com/zhix/tjbot 
+Before we move on, go to the Web Browser to access this website: www.github.com/zhix/tjbot 
 This website will be your guidance from now on. 
 ![alt text][desktop3] 
 
@@ -68,7 +68,7 @@ After completion, you now need to connect the electronics to Raspberry Pi accord
 ### 4) [Programming] Follow the instructions in order to get the TJBot working. 
 Once you are done, you are now working on the final and most crucial (possibly the most difficult) step. We will run the NodeJS programming on “Geany Programmer’s Editor”. 
 
-1. to Menu > Programming > Geany Programmer’s Editor 
+1. Go to Menu > Programming > Geany Programmer’s Editor 
 ![alt text][geany] 
 
 You will see this on your screen. 
