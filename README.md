@@ -45,11 +45,12 @@ Wait for a few seconds, you will see the destop like this.
 
 Before we move on, go to the Web Browser to access this website: www.github.com/zhix/tjbot 
 This website will be your guidance from now on. 
+
 ![alt text][desktop3] 
 
 
-[assemble]: https://github.com/zhix/tjbot/blob/master/images/AssembleRPi.png  "Powering Up Raspberry Pi"
-[structure]: https://github.com/zhix/tjbot/blob/master/images/StructureRPi.png "Powering Up Raspberry Pi" 
+[assemble]: https://github.com/zhix/tjbot/blob/master/images/AssembleRPi.png  
+[structure]: https://github.com/zhix/tjbot/blob/master/images/StructureRPi.png 
 [desktop]: https://github.com/zhix/tjbot/blob/master/images/Startup.png 
 [desktop2]: https://github.com/zhix/tjbot/blob/master/images/pixelDestop.jpg 
 [desktop3]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
@@ -64,6 +65,12 @@ Build your own robot following the instructions [here](http://www.instructables.
 ### 3) [Electronics] Follow the diagram to set up the electronic components 
 After completion, you now need to connect the electronics to Raspberry Pi according to this diagram. 
 ![alt text][fritzing] 
+
+Refer to this GPIO Pinout Diagram to understand more about the General Purpose Input/Output Pins on Raspberry Pi:
+![alt text][gpio] 
+
+[fritzing]: https://github.com/zhix/tjbot/blob/master/images/Fritzing.png 
+[gpio]: https://github.com/zhix/tjbot/blob/master/images/gpioPinout.jpg
 
 ### 4) [Programming] Follow the instructions in order to get the TJBot working. 
 Once you are done, you are now working on the final and most crucial (possibly the most difficult) step. We will run the NodeJS programming on “Geany Programmer’s Editor”. 
@@ -105,9 +112,9 @@ sudo node LEDtest.js
 ```bash
 sudo node MICtest.js 
 ```
+Try to speak into the microphone, see what is printed on the Terminal. 
 
 9. Test "SERVOtest.js" to see if your servo motor is working fine.
-
 
 ```bash
 sudo node SERVOtest.js 
@@ -116,9 +123,8 @@ sudo node SERVOtest.js
 10. If all set, we will run "stt.js" to see the effect. 
 
 
-[fritzing]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
-[geany]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
-[geany2]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[geany]: https://github.com/zhix/tjbot/blob/master/images/geany.png 
+[geany2]: https://github.com/zhix/tjbot/blob/master/images/geany2.png 
 [cdtjbot]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
 [gitinit]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
 [s2t]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
