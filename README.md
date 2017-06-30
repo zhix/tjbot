@@ -25,10 +25,6 @@ This is a 3-hour workshop designed for upper-primary and secondary school studen
 
 1.	Get ready with the following items: 
 
-<!---
-<img src="https://github.com/favicon.ico" width="48">
---->
-
 ![alt text][assemble]
 
 2.	Hook up all the items into the correct ports on Raspberry Pi. 
@@ -99,22 +95,26 @@ cd recipes/speech_to_text/
 ![alt text][s2t] 
 
 5. On Geany's Code Editor, open the file "config.js" to change the password and username according the paper given. Save the file after that. 
-![alt text][configcred] 
+![alt text][configcred1] 
+![alt text][configcred2] 
+![alt text][configcred3] 
 
-5. Test "LEDtest.js" to see if your tricolor LED is working. 
+6. Test "LEDtest.js" to see if your tricolor LED is working. 
 
 ```bash
 sudo node LEDtest.js 
 ```
 
-6. Test "MICtest.js" to see if your microphone is sending signals to IBM Watson.
+7. Test "MICtest.js" to see if your microphone is sending signals to IBM Watson.
 
 ```bash
 sudo node MICtest.js 
 ```
 Try to speak into the microphone, see what is printed on the Terminal. 
+![alt text][mictest] 
 
-9. Test "SERVOtest.js" to see if your servo motor is working fine.
+
+8. Test "SERVOtest.js" to see if your servo motor is working fine.
 
 ```bash
 sudo node SERVOtest.js 
@@ -125,10 +125,13 @@ sudo node SERVOtest.js
 
 [geany]: https://github.com/zhix/tjbot/blob/master/images/geany.png 
 [geany2]: https://github.com/zhix/tjbot/blob/master/images/geany2.png 
-[cdtjbot]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
-[gitinit]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
-[s2t]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
-[configcred]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
+[cdtjbot]: https://github.com/zhix/tjbot/blob/master/images/cdtjbot.png 
+[gitinit]: https://github.com/zhix/tjbot/blob/master/images/gitinit.png 
+[s2t]: https://github.com/zhix/tjbot/blob/master/images/s2t.png 
+[configcred1]: https://github.com/zhix/tjbot/blob/master/images/configcred1.png 
+[configcred2]: https://github.com/zhix/tjbot/blob/master/images/configcred2.png 
+[configcred3]: https://github.com/zhix/tjbot/blob/master/images/configcred3.png 
+[micest]: https://github.com/zhix/tjbot/blob/master/images/mictest.png 
 
 
 ## Setting up the environment
