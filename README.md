@@ -173,6 +173,7 @@ sudo npm install
 
 ```bash
 sudo npm install rpio 
+sudo npm install readline-sync
 ```
 
 5) Test the microphone
