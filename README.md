@@ -1,4 +1,4 @@
-# [IBM Watson Maker Workshop] (https://github.com/zhix/tjbot) 
+# [IBM Watson Maker Workshop](https://github.com/zhix/tjbot) 
 
 ## Using TJBot with common-cathode tri-color LED & servo motor 
 
