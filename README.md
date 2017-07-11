@@ -1,4 +1,6 @@
-# Using TJBot with common-cathode tri-color LED & servo motor 
+# [IBM Watson Maker Workshop] (https://github.com/zhix/tjbot) 
+
+## Using TJBot with common-cathode tri-color LED & servo motor 
 
 This is a 3-hour workshop designed for upper-primary and secondary school students to explore on Raspberry Pi, Watson API, JavaScript and basic electronics. By the end of the workshop, students will be able to assemble their own TJBot and get it running with Watson API, controlling tri-color LED & servo motor by speech.
 
