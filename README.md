@@ -54,16 +54,7 @@ This website will be your guidance from now on.
 [desktop2]: https://github.com/zhix/tjbot/blob/master/images/pixelDestop.jpg 
 [desktop3]: https://github.com/zhix/tjbot/blob/master/images/desktop3.png 
 
-
-
-### 2) [Origami] Fold your own TJBot! 
-
-Build your own robot following the instructions [here](http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/) starting from Step 3. Alternatively, you can watch the [YouTube video here](https://www.youtube.com/watch?v=bLt3Cf2Ui3o) 
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="https://i.ytimg.com/vi/k928MQmD0oc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCVSTfddZpY0j1g2WF_bCXSU_4JWg" alt="YouTube Video Here" width="240" border="10" /></a> 
-
-
-### 3) [Electronics] Follow the diagram to set up the electronic components 
+### 2) [Electronics] Follow the diagram to set up the electronic components 
 After completion, you now need to connect the electronics to Raspberry Pi according to this diagram. 
 ![alt text][fritzing] 
 
@@ -71,11 +62,11 @@ After completion, you now need to connect the electronics to Raspberry Pi accord
 Refer to this GPIO Pinout Diagram to understand more about the General Purpose Input/Output Pins on Raspberry Pi:
 ![alt text][gpio] 
 
-[fritzing]: https://github.com/zhix/tjbot/blob/master/images/Fritzing.png 
+[fritzing]: https://github.com/zhix/tjbot/blob/master/images/Fritzing2.png 
 [gpio]: https://github.com/zhix/tjbot/blob/master/images/gpioPinout.jpg
 
 
-### 4) [Programming] Follow the instructions in order to get the TJBot working. 
+### 3) [Programming] Follow the instructions in order to get the TJBot working. 
 Once you are done, you are now working on the final and most crucial (possibly the most difficult) step. We will run the NodeJS programming on “Geany Programmer’s Editor”. 
 
 
@@ -145,6 +136,16 @@ sudo node stt.js
 [configcred2]: https://github.com/zhix/tjbot/blob/master/images/configcred2.png 
 [configcred3]: https://github.com/zhix/tjbot/blob/master/images/configcred3.png 
 [mictest]: https://github.com/zhix/tjbot/blob/master/images/mictest.png 
+
+
+
+### 4) [Origami] Fold your own TJBot! 
+
+Build your own robot following the instructions [here](http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/) starting from Step 3. Alternatively, you can watch the [YouTube video here](https://www.youtube.com/watch?v=bLt3Cf2Ui3o) 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=bLt3Cf2Ui3o" target="_blank"><img src="https://i.ytimg.com/vi/k928MQmD0oc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCVSTfddZpY0j1g2WF_bCXSU_4JWg" alt="YouTube Video Here" width="240" border="10" /></a> 
+
+
 
 
 ## Setting up the environment
