@@ -62,7 +62,7 @@ After completion, you now need to connect the electronics to Raspberry Pi accord
 Refer to this GPIO Pinout Diagram to understand more about the General Purpose Input/Output Pins on Raspberry Pi:
 ![alt text][gpio] 
 
-[fritzing]: https://github.com/zhix/tjbot/blob/master/images/Fritzing2.png 
+[fritzing]: https://github.com/zhix/tjbot/blob/master/images/TJBOT_bb.png 
 [gpio]: https://github.com/zhix/tjbot/blob/master/images/gpioPinout.jpg
 
 
