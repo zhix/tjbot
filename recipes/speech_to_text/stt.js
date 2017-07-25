@@ -32,16 +32,8 @@ var colorPalette = { //[r,g,b]
     "right": [1,0,0], 
     "green": [0,1,0],
     "blue": [0,0,1],
-    "do": [0,0,1],
-    "purple": [1,0,1],
-    "yellow": [1,1,0],
-    "pink": [1,0,1],
-    "orange": [1,1,0],
-    "aqua": [0,1,1],
-    "white": [1,1,1],
-    "off": [0,0,0],
-    "cool": [0,0,0],
-    "on": [1,1,1]
+    "do": [0,0,1],// try to create more color...
+
 }
 
 //console.log(Object.keys(colorPalette))
