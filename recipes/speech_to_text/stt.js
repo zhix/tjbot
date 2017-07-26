@@ -26,14 +26,13 @@ var initPins = function(){
   rpio.open(BLUE_PIN,rpio.OUTPUT, rpio.HIGH);
 }
 
+
+
 var colorPalette = { //[r,g,b]
     "red": [1,0,0],
-    "read": [1,0,0], // sometimes, STT hears "read" instead of "red"
-    "right": [1,0,0], 
     "green": [0,1,0],
-    "blue": [0,0,1],
-    "do": [0,0,1],// try to create more color...
-
+    "blue": [0,0,1]
+    //add more colors! You may try emotions too, such as "sad", "happy".
 }
 
 //console.log(Object.keys(colorPalette))
@@ -114,36 +113,37 @@ tjColors.forEach(function(color) {
     colors[color] = 1;
 });
 
-// listen for speech
+// TJBot start listening for speech
 tj.listen(function(msg) {
-    var containsTurn = msg.indexOf("") >= 0;
-    var containsChange = msg.indexOf("change") >= 0;
-    var containsSet = msg.indexOf("set") >= 0;
-    var containsLight = msg.indexOf("") >= 0;
-    var containsDisco = msg.indexOf("disco") >= 0;
-    var containsRainbow = msg.indexOf("rainbow") >= 0;
-    var containsShake = msg.indexOf("shake") >= 0;
-    var containsMove = msg.indexOf("move") >= 0;
+//    var containsTurn = msg.indexOf("") >= 0;
+//    var containsChange = msg.indexOf("change") >= 0;
+//    var containsSet = msg.indexOf("set") >= 0;
+//    var containsLight = msg.indexOf("") >= 0;
+//    var containsDisco = msg.indexOf("disco") >= 0;
+//    var containsRainbow = msg.indexOf("rainbow") >= 0;
+//    var containsShake = msg.indexOf("shake") >= 0;
+//    var containsMove = msg.indexOf("move") >= 0;
     
-	if (containsDisco || containsRainbow) {		
-        discoParty();
-    }
+//    if (containsDisco || containsRainbow) {		
+//        discoParty();
+//    }
     
-    else if ((containsTurn || containsChange || containsSet) && containsLight) {
-        // was there a color uttered?
-        var words = msg.split(" ");
-        for (var i = 0; i < words.length; i++) {
+//    else if ((containsTurn || containsChange || containsSet) && containsLight) {
+    var words = msg.split(" "); 				// the message is split into different words
+    for (var i = 0; i < words.length; i++) {
             var word = words[i];
-            if (word=="shake" || word =="Sheik" || word =="move") {
-				console.log("Wave arms");
-				tj.wave();
-				}
-            else if (colorPalette[word] != undefined || word == "on" || word == "off" || word =="read" ||word =="right") {
+            if (word=="shake" || word =="move" || word == "hello") {    //if the word matches keywords "shake", "move". Try adding more words to be detected here! 
+		console.log("Wave arms");
+		tj.wave();}
+            else if (colorPalette[word] != undefined) {
                 setLED(word);
-                break;
-            }
+                break;}
+	    else if (word =="disco" || word =="rainbow"){
+	    	discoParty();
+	    	break;}
+	    
         }
-    } 
+//    } 
 });
 
 // let's have a disco party!
@@ -160,15 +160,13 @@ function discoParty() {
 		}
 	if (answer == 0) {
 		setLED("green");
-		}
-		
+		}	
 	x = x+1;
   
 }, i*200);
 
 }
 setLED("off");}
-
 
 // ----  reset LED before exit
 process.on('SIGINT', function () {
