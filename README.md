@@ -137,7 +137,14 @@ sudo node stt.js
 [configcred3]: https://github.com/zhix/tjbot/blob/master/images/configcred3.png 
 [mictest]: https://github.com/zhix/tjbot/blob/master/images/mictest.png 
 
+### Challenges
 
+1) Change the coding in the ```stt.js``` script to include more colors! 
+<insert screenshot> 
+
+2) Change the coding in the ```stt.js``` script to add more words that TJBot will recognise! 
+
+3) 
 
 ### 4) [Origami] Fold your own TJBot! 
 
