@@ -14,28 +14,24 @@
  * limitations under the License.
  */
 
-
 var RED_PIN = 11, GREEN_PIN = 13, BLUE_PIN = 15;
 var LIGHT_PIN = 40;
 var rpio = require('rpio');
 
-/*Initialize the pins*/
+/*Initialize the GPIO pins on RasPi*/
 var initPins = function(){
   rpio.open(RED_PIN,rpio.OUTPUT, rpio.HIGH);
   rpio.open(GREEN_PIN,rpio.OUTPUT, rpio.HIGH);
   rpio.open(BLUE_PIN,rpio.OUTPUT, rpio.HIGH);
 }
 
-
-
 var colorPalette = { //[r,g,b]
     "red": [1,0,0],
     "green": [0,1,0],
     "blue": [0,0,1]
-    //add more colors! You may try emotions too, such as "sad", "happy".
+    //add more colors! 
+    //You may try emotions too, such as "sad", "happy".
 }
-
-//console.log(Object.keys(colorPalette))
 
 var rpioVal = {
   1 : rpio.HIGH,
@@ -47,7 +43,6 @@ var turnLight = function (colorConfig){
   rpio.write(RED_PIN,rpioVal[colorConfig[0]]);
   rpio.write(GREEN_PIN,rpioVal[colorConfig[1]]);
   rpio.write(BLUE_PIN,rpioVal[colorConfig[2]]);
-
 }
 
 var switchLight = function(command){
@@ -67,21 +62,17 @@ var switchLight = function(command){
 
 function setLED(msg){
     var words = msg.split(" ");
-    var color = [0,0,0]; //red
+    var color = [0,0,0]; 
 
    for(var i=0; i < words.length; i++){
      if (words[i] in colorPalette){
        color = colorPalette[words[i]];
-       /*inject code to switch lamp*/
        if (['on','off'].indexOf(words[i]) > -1){
-         //console.log(words[i]);
          switchLight(words[i]);
        }
-
      }
    }
     turnLight(color);
-    //console.log('color = ', color);
 }
 
 var TJBot = require('tjbot');
