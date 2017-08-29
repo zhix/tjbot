@@ -140,11 +140,11 @@ sudo node stt.js
 ### Challenges
 
 1) Change the coding in the ```stt.js``` script to include more colors! 
-<insert screenshot> 
+Tip: inside ```stt.js```, navigate to ```var colorPalette``` to edit. 
 
 2) Change the coding in the ```stt.js``` script to add more words that TJBot will recognise! 
+Tip: inside ```stt.js```, navigate to ```var colorPalette``` and ```tj.listen(function(msg)``` to add more words. 
 
-3) 
 
 ### 4) [Origami] Fold your own TJBot! 
 
