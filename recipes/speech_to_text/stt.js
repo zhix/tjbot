@@ -132,7 +132,7 @@ tj.listen(function(msg) {
     var words = msg.split(" "); 				// the message is split into different words
     for (var i = 0; i < words.length; i++) {
             var word = words[i];
-            if (word=="shake" || word =="move" || word == "hello") {    //if the word matches keywords "shake", "move". Try adding more words to be detected here! 
+            if (word=="shake" || word == "hello") {    //if the word matches keywords "shake", "move". Try adding more words to be detected here! 
 		console.log("Wave arms");
 		tj.wave();}
             else if (colorPalette[word] != undefined) {
