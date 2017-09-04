@@ -11,9 +11,9 @@ exports.credentials = {};
 
 // Watson Speech to Text
 // https://www.ibm.com/watson/developercloud/speech-to-text.html
-
+// https://stream.watsonplatform.net/speech-to-text/api
 // password is only available and applicable to 1 device. 
 exports.credentials.speech_to_text = {
-    password: 'HZr0yJA6ymva',
-    username: '81469323-1a91-49bc-b12a-e22f014e2f40'
+    password: "ILLA2uKhLoFX",
+    username: "4bb5e3de-552f-40a3-b4a8-c6ec736745ed"
 };

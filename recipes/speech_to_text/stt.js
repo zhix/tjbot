@@ -29,7 +29,7 @@ var colorPalette = { //[r,g,b]
     "red": [1,0,0],
     "green": [0,1,0],
     "blue": [0,0,1]
-    //add more colors! 
+    //add more colors! Mix your own color!
     //You may try emotions too, such as "sad", "happy".
 }
 
@@ -128,9 +128,11 @@ tj.listen(function(msg) {
 		tj.wave();}
             else if (colorPalette[word] != undefined) {
                 setLED(word);
+		console.log("Switching light..");
                 break;}
 	    else if (word =="disco" || word =="rainbow"){
 	    	discoParty();
+		console.log("Here we go!");
 	    	break;}
 	    
         }

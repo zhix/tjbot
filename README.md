@@ -115,6 +115,8 @@ sudo node MICtest.js
 Try to speak into the microphone, see what is printed on the Terminal. 
 ![alt text][mictest] 
 
+To exit from the running program, ```CTRL + C```. 
+
 
 8. Test "SERVOtest.js" to see if your servo motor is working fine.
 ```bash
@@ -125,6 +127,7 @@ sudo node SERVOtest.js
 ```bash
 sudo node stt.js
 ```
+To exit from the running program, ```CTRL + C```. 
 
 
 [geany]: https://github.com/zhix/tjbot/blob/master/images/geany.png 
@@ -137,13 +140,18 @@ sudo node stt.js
 [configcred3]: https://github.com/zhix/tjbot/blob/master/images/configcred3.png 
 [mictest]: https://github.com/zhix/tjbot/blob/master/images/mictest.png 
 
+
 ### Challenges
 
-1) Change the coding in the ```stt.js``` script to include more colors! 
+1) Change the coding in the ```stt.js``` script to **include more colors**! 
+
 Tip: inside ```stt.js```, navigate to ```var colorPalette``` to edit. 
 
-2) Change the coding in the ```stt.js``` script to add more words that TJBot will recognise! 
+
+2) Change the coding in the ```stt.js``` script to **add more words** that TJBot will recognise! 
+
 Tip: inside ```stt.js```, navigate to ```var colorPalette``` and ```tj.listen(function(msg)``` to add more words. 
+
 
 
 ### 4) [Origami] Fold your own TJBot! 
@@ -218,6 +226,8 @@ sudo node LEDtest.js
 sudo node MICtest.js 
 ```
 
+To exit from the running program, ```CTRL + C```. 
+
 9) Test "SERVOtest.js" to see if your servo motor is working fine.
 
 
@@ -226,6 +236,8 @@ sudo node SERVOtest.js
 ```
 
 10) When ready, run "stt.js" with ```sudo node stt.js``` and get the fun begin. 
+
+To exit from the running program, ```CTRL + C```. 
 
 
 # IBM TJBot
