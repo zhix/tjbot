@@ -85,7 +85,8 @@ Press "enter" when done.
 3. On Terminal, run the following. 
 ```
 git init
-git pull 
+git fetch
+git reset --hard origin
 ```
 ![alt text][gitinit] 
 
