@@ -85,9 +85,16 @@ Press "enter" when done.
 3. On Terminal, run the following. 
 ```
 git init
-git fetch
+git fetch --all
 git reset --hard origin
 ```
+If this give you error such as 
+```fatal: ambiguous argument 'origin': unknown revision or path not in the work tree```
+do this then: 
+```
+git pull
+```
+
 ![alt text][gitinit] 
 
 
